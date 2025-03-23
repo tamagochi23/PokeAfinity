@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokemon afinity</title>
+</head>
+<body>
+    <h1>Pokemon afinity</h1>
+    <p>Ingresa tus datos y encontramos el pokemon que más se parece a ti, 
+        basado en tus gustos y preferencias, utilizando un algoritmo de 
+        machine learning.
+    </p>
+    <form action="/" method="post">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+    
+        <label for="edad">Edad :</label><br>
+        <input type="edad" id="edad" name="edad" required><br><br>
+    
+        <input type="submit" value="Enviar">
+      </form>
+{% if data %}
+
+    <h1>Resultados</h1>
+    <p>Valores ingresados:</p>
+    {% for key, value in data.items() %}
+        {{ key }}: {{ value }}<br>
+    {% endfor %}
+
+{% endif %}
+</body>
+</html>
