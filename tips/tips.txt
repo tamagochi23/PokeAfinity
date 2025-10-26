@@ -1,0 +1,19 @@
+----- DEBUG MODE -----------
+
+By enabling debug mode, the server will automatically reload if code changes, and will show an interactive debugger in the browser if an error occurs during a request.
+
+To enable debug mode, use the --debug option.
+
+flask --app hello run --debug
+
+
+--- CONVERTER TYPES TO SPECIFY THE TYPE OF THE ARGUMENT LIKE ---
+
+* string : (default)
+* int
+* float
+* path: like STRING but also accepts slashes
+* uuid: accepts UUID strings (Universally Unique Identifier) 28-bit number used to uniquely identify information in computer systems. 
+        It is also known as a GUID (Globally Unique Identifier), particularly in Microsoft environments.
+
+        xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
