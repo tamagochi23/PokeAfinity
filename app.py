@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return '<p>Welcome to the PokeAfinity App!</p>'
+    return '<p>Welcome to the PokAfindsdity App!</p>'
 
 @app.route('/hello')
 def hello():
